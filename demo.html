@@ -12,7 +12,7 @@
 
 <p id="demo3">This paragraph is about to change</p>
 
-<button type="button" onclick=makeRed()>Click Me!</button>
+<button type="button" onclick=makeRed() style="background-color:yellow">Click Me!</button>
 
 <h2>Variables</h2>
 
@@ -33,10 +33,20 @@ new String("First")==new String("First") is <code>false</code><br>
 new String("First")===new String("First") is <code>false</code><br>
 </p>
 
+<h2>Numericals (aka Sorcery)</h2>
+<p> <span id="xy"></span><br>
+The result of "sum"+x+y is: <span id="result1">	</span><br>
+The result of "sum"+(x+y) is: <span id="result2"></span><br>
+<span id="z"></span><br>
+The result of x+y+z is: <span id="result3"></span></p>
+
 <script src="innerAccess.js"></script>
 <script src="styleChange.js"></script>
 <script src="variables.js"></script>
-<script src="objects.js"></script>
+<script src="numeric.js"></script>
+
+<h2 id="date"></h2>
+<button type="button" onclick=showDate(this) style="background-color:orange" id="dateButton">Show me the date!</button>
 
 </body>
 </html>
