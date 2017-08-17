@@ -9,14 +9,6 @@ document.getElementById("result3").innerHTML = x + y + z;
 
 function showDate(button) {
 	document.getElementById("date").innerHTML = new Date().toDateString();
-	button.style.visibility = "hidden";
-}
-
-function displayList() {
-	text = "<ul>";
-	for (i = 0; i < 5; i++) {
-	    text += "<li>" + "This is " + (i+1) + "th element" + "</li>";
-	}
-	text += "</ul>";
-	document.getElementById("list").innerHTML = text;
+	document.getElementById("date").style.color="red";
+	button.style.visibility = "hidden"; //this will leave a big gap
 }
