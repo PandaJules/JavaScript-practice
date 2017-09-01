@@ -28,6 +28,10 @@ function slide() {
   }
 }
 
+document.getElementById("slide").addEventListener("click", function(){
+    alert("The block is about to slide!");
+});
+
 function mOver(obj) {obj.innerHTML = "No, get off me now!"}
 
 function mOut(obj) {obj.innerHTML = "Thank you :)"}
@@ -41,3 +45,7 @@ function mUp(obj) {
     obj.style.backgroundColor="#009933";
     obj.innerHTML="Clicked!";
 }
+
+window.addEventListener("resize", function(){
+    document.getElementById("size").innerHTML = "The window is now: " + window.innerWidth+"x"+window.innerHeight;
+});
