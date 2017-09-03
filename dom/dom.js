@@ -5,6 +5,11 @@ document.getElementById("total").innerHTML = "There are " + x.length + " paragra
 var y = document.querySelectorAll("p.middle");
 document.getElementById("query").innerHTML = 'The first paragraph with class="middle": ' + y[0].innerHTML;
 
+document.getElementById("children").innerHTML = "The node above has " + 
+											document.getElementById("parent").childNodes.length + 
+											" child, which is " + document.getElementById("parent").childNodes[0] + 
+											" with the value " + document.getElementById("parent").childNodes[0].nodeValue;
+
 
 function slide() {
   var elem = document.getElementById("block");  
@@ -48,4 +53,14 @@ function mUp(obj) {
 
 window.addEventListener("resize", function(){
     document.getElementById("size").innerHTML = "The window is now: " + window.innerWidth+"x"+window.innerHeight;
+    document.getElementById("size").style.color="orange";
 });
+
+
+function newChild() {
+	var para = document.createElement("p");
+	var node = document.createTextNode("This is one is NEW!");
+	para.appendChild(node);
+	var element = document.getElementById("d02");
+	element.appendChild(para);
+}

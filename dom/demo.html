@@ -6,6 +6,11 @@
     padding: 10px;
     color: blue
 }
+#d02 {
+    border: 1px solid black;
+    padding: 5px;
+    color: blue
+}
 #container {
   width: 350px;
   height: 150px;
@@ -28,9 +33,7 @@
 </div>
 <p id="second"></p>
 <p id="total"></p>
-<br>
 <p id="size"></p>
-<br>
 <p class="middle">There are so many methods out there!</p>
 <p class="middle">The <b>querySelectorAll</b> method is also kind of useful</p>
 <p id=query></p>
@@ -52,6 +55,15 @@
   I'm clickable
 </div>
 
+<p id="parent" style="color:green">"This is a &lt p &gt node"</p>
+<p id="children"></p>
+
+<div id="d02">
+<p id="p1">This is a 1st paragraph.</p>
+<p id="p2">This is a 2nd paragraph.</p>
+</div>
+<button id="new" onclick="newChild()">Add new paragraph</button>
+<p>To remove an element, you need to also know its parent. Crazy, I know. So next time use: child.parentNode.removeChild(child);</p>
 
 
 
