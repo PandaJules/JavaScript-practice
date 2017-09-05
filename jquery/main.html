@@ -2,18 +2,49 @@
 <html>
 <script src="jquery.min.js"></script> 
 <script src="application.js"></script>
+<style>
+	#traverse {
+		border: 1px solid blue;
+    	padding: 10px;
+	}
+</style>
 <body>
-<h1>TO-DO list</h1>
-<p id=important style="color:red"></p>
-<ul class=tasks>
-	<li>Buy bread, milk, meat</li>
-	<li>Fix bike</li>
-	<li>Borrow camera</li>
-	<li>Look at dissertations</li>
-	<li>Skype parents</li>
-	<li>Visit Turkey</li>
-</ul>
-<p id="traverse"></p>
-<button>Add 1 more task</button>
+<div id="todo">
+	<h1>TO-DO list</h1>
+		<p id=important style="color:red"></p>
+		<ul class=tasks>
+			<li>Buy bread, milk, meat</li>
+			<li>Fix bike</li>
+			<li>Borrow camera</li>
+			<li>Look at dissertations</li>
+			<li>Skype parents</li>
+			<li>Visit Turkey</li>
+		</ul>
+	<p><button>Add 1 more task</button></p>
+</div>
+
+<div id="traverse"></div>
+
+<div id="tours">
+  <h1>Guided Tours</h1>
+  <ul>
+    <li class="usa tour" data-discount="299">
+      <h2>New York, New York</h2>
+      <span class="details">$1,899 for 7 nights</span>
+      <button class="book">Book Now</button>
+    </li>
+    <li class="europe tour" data-discount="176">
+      <h2>Paris, France</h2>
+      <span class="details">$2,299 for 7 nights</span>
+      <button class="book">Book Now</button>
+    </li>
+    <li class="asia tour" data-discount="349">
+      <h2>Tokyo, Japan</h2>
+      <span class="details">$3,799 for 7 nights</span>
+      <button class="book">Book Now</button>
+    </li>
+  </ul>
+</div>
+
 </body>
 </html>
