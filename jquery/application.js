@@ -42,4 +42,8 @@ jQuery(document).ready(function(){
     $(".tour").filter('.top-hits').find("#discount").each(function() {this.style.color="yellow"})
   });
 
+  $("#puzzle").on('click', 'button', function() { 
+    $('.photos').slideToggle();
+  });
+
 });
