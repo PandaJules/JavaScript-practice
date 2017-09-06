@@ -46,4 +46,12 @@ jQuery(document).ready(function(){
     $('.photos').slideToggle();
   });
 
+  $('#people').on('keyup', function() {
+    var people = +$(this).val();
+    if (people<0) {alert("Enter a positive number of people")}
+    $('#people-count').text(people);
+    var price = +$(this).closest('.cinema').data('ticket-price');
+    $('#total').text(Math.max(0, Math.round(people*price*100)/100));
+  });
+
 });
