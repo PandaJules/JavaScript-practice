@@ -27,3 +27,9 @@ function greetMe() {
     }
     document.getElementById("greet").innerHTML = txt;
 }
+
+var timer = setInterval(myTimer, 500);
+function myTimer() {
+    var d = new Date();
+    document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+}
